@@ -10,8 +10,8 @@ using namespace std;
 //the begin gets the first iput from our users, 
 //and the crossroads is where it will take off.
 void displayIntroduction();
-void storyBegin();
-void storyCrossroads();
+void storyBegin(string& userNAme);
+void storyCrossroads(const string userName);
 
 //these two are placeholders for future branches of my story.
 //void decisionTree();
@@ -24,12 +24,13 @@ string getUserChoice();
 
 int main()
 {
+	string userName;
 
 	displayIntroduction();
 
-	storyBegin();	
+	storyBegin(userName);	
 
-	storyCrossroads();
+	storyCrossroads(userName);
 	
 	return 0;
 }
@@ -86,7 +87,7 @@ if they hadnt been looking for you I would have been well on my way with that ho
 	return;
 }
 
-void storyBegin()
+void storyBegin(string& userName)
 {
 	
 
@@ -121,9 +122,8 @@ The thief barely got 20 feet before he was stuck with arrows from all directions
 	cout << "\n\nAlessandra turns her attention to you, 'You there! What is your name?'\n" << endl;
 	cout << "1. Tell her your name\n2. Try to run away\n";
 
-	//here is where I start recieving user input for the story.
+	//here is where I start receiving user input for the story.
 
-	string userName;
 	string userChoice;
 
 	userChoice = getUserChoice();
@@ -132,7 +132,7 @@ The thief barely got 20 feet before he was stuck with arrows from all directions
 	// I use this if loop to branch out based on decisions
     	if (userChoice == "1")
 			{
-				string userName;
+				
 				userName = getUserName();	
 				
 				cout << "\n\nYour name is " << userName << "? You need to come with me right away!\n\n" << endl;
@@ -151,12 +151,12 @@ The thief barely got 20 feet before he was stuck with arrows from all directions
 	return;
 }
 
-void storyCrossroads()
+void storyCrossroads(string userName)
 {
 
-	//this part of the story is where things will really start changin direction. 
+	//this part of the story is where things will really start changing direction. 
 	//I will be working on it more with the future projects mentioned in class.
-	// I have a couple commented out functions that are palce holders for my story.
+	// I have a couple commented out functions that are place holders for my story.
 
 	cout << "Alessandra: What are you waiting for? We need to go right now!" << endl;
 	cout << "1. Why should I?\n2. Go with her.\n\n";
@@ -167,7 +167,7 @@ void storyCrossroads()
 	if (userChoice == "1")
 	{
 		cout << "Alessandra: We don't have time for this! We need to-" << endl;
-		cout << "Ralof: Thats a great question, Where are you taking him?" << endl;
+		cout << "Ralof: Thats a great question, Where are you taking " << userName << "?" << endl;
 
 		//decisionTree();
 	}
@@ -188,7 +188,7 @@ string getUserName()
 	//here I give instruction to the user
 	cout << "Enter Name: ";
 		
-	//this code is how i actually recieve the input from the user and
+	//this code is how i actually receive the input from the user and
 	//then put it into the variable "userName"
 	getline(cin, userName);
 
