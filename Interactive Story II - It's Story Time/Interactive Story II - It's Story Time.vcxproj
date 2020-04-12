@@ -140,6 +140,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Source.cpp" />
+    <ClCompile Include="storyFunctions.cpp" />
+    <ClCompile Include="userInput.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="storyFunctions.h" />
+    <ClInclude Include="userInput.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
