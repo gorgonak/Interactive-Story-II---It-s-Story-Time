@@ -24,12 +24,24 @@
     <ClCompile Include="storyFunctions.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="character.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="gameMaster.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="userInput.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="storyFunctions.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="character.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="gameMaster.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

@@ -139,11 +139,15 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="character.cpp" />
+    <ClCompile Include="gameMaster.cpp" />
     <ClCompile Include="Source.cpp" />
     <ClCompile Include="storyFunctions.cpp" />
     <ClCompile Include="userInput.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="character.h" />
+    <ClInclude Include="gameMaster.h" />
     <ClInclude Include="storyFunctions.h" />
     <ClInclude Include="userInput.h" />
   </ItemGroup>
